@@ -1,0 +1,5 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+df = pd.read_csv('/content/dataset_2196_cloud - dataset_2196_cloud (9).csv')
+df = df.dropna()
