@@ -1,0 +1,26 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+df = pd.read_csv('/content/dataset_2196_cloud - dataset_2196_cloud (2).csv')
+
+print(df)
+
+plt.scatter(df['NC'], df['seeded'])
+plt.xlabel('NC')
+plt.ylabel('Seeded or Unseeded')
+plt.show()
+
+plt.scatter(df['SC'], df['seeded'])
+plt.xlabel('SC')
+plt.ylabel('Seeded or Unseeded')
+plt.show()
+
+plt.scatter(df['NC'], df['temperature_rain'])
+plt.xlabel('NC')
+plt.ylabel('temperature_rain')
+plt.show()
+
+plt.scatter(df['season'], df['temperature_no_rain'])
+plt.xlabel('Season')
+plt.ylabel('temperature_no_rain')
+plt.show()
+
